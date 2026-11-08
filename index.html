@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#070b12">
+  <meta name="description" content="First Touch is an original mobile soccer club. Build a squad, open scout packs, and play full 11v11 matches.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="First Touch">
+  <title>First Touch</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+  <div id="splash">
+    <div>
+      <div class="mark">FT</div>
+      <div class="splash-title">FIRST TOUCH</div>
+      <div class="splash-sub">Your club. Your touch.</div>
+    </div>
+  </div>
+  <div id="app">
+    <div id="view"></div>
+  </div>
+  <div id="toast" role="status"></div>
+  <div id="modal" hidden>
+    <div class="dialog">
+      <h2 id="modal-title"></h2>
+      <p id="modal-body" class="small muted"></p>
+      <div class="stack">
+        <button class="btn" id="modal-yes" type="button">Confirm</button>
+        <button class="btn ghost" id="modal-no" type="button">Back</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
